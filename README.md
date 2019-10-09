@@ -1,5 +1,12 @@
 # use-browser
 
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@crossroads-loyalty-solutions/react-use-browser.svg)](https://bundlephobia.com/result?p=@crossroads-loyalty-solutions/react-use-browser)
+[![Dependencies](https://img.shields.io/david/crossroads-loyalty-solutions/react-use-browser.svg)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
+[![Build Status](https://travis-ci.org/crossroads-loyalty-solutions/react-use-browser.svg?branch=master)](https://travis-ci.org/crossroads-loyalty-solutions/react-use-browser)
+[![Codecov](https://img.shields.io/codecov/c/gh/crossroads-loyalty-solutions/react-use-browser)](https://codecov.io/gh/crossroads-loyalty-solutions/react-use-browser)
+![License](https://img.shields.io/npm/l/@crossroads-loyalty-solutions/react-use-browser)
+[![npm](https://img.shields.io/npm/v/@crossroads-loyalty-solutions/react-use-browser)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
+
 A hook giving components the ability to render one markup on the server,
 then hydrate using that markup on the client and once hydrated swap that
 markup to the client markup.
