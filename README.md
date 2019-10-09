@@ -7,14 +7,22 @@
 ![License](https://img.shields.io/npm/l/@crossroads-loyalty-solutions/react-use-browser)
 [![npm](https://img.shields.io/npm/v/@crossroads-loyalty-solutions/react-use-browser)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
 
-A hook giving components the ability to render one markup on the server,
-then hydrate using that markup on the client and once hydrated swap that
-markup to the client markup.
+A hook enabling client side hydration of Server-Side-Rendered components when
+server-produced markup needs to differ from the final client application markup.
 
-This solves the issue of ReactDOM `hydrate` having issues with hydrating
-server markup with the client DOM by first letting the components render
-the server markup during hydration and then make them update to the client
-markup once hydration has finished.
+This is useful when you deliberately want to render different markup on the
+server with the same isomorphic application, such as:
+
+ * Pagination on the server which gets transformed into an infinite-scroll
+   once client JavaScript has loaded.
+ * A native `<input type="select" />` on the server and a custom
+   JavaScript-enhanced `<Select />` component on the client.
+
+This hook solves the issue of ReactDOM `hydrate` having issues with hydrating
+progressive-enhancement webapps where the JS-enhanced client DOM differs
+from the server-rendered markup. It does this by first letting the components
+render the server markup during hydration and — once hydrated — swap out
+the differing parts.
 
 ## Installation
 
