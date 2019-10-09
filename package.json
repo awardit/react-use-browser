@@ -1,0 +1,127 @@
+{
+  "name": "@crossroads-loyalty-solutions/react-use-browser",
+  "version": "1.0.0",
+  "description": "A hook enabling client markup to differ from server markup when using Server-Side-Rendering",
+  "author": "Martin Wernstål <m4rw3r@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "ssr",
+    "react",
+    "hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crossroads-loyalty-solutions/react-use-browser.git"
+  },
+  "bugs": "https://github.com/crossroads-loyalty-solutions/react-use-browser/issues",
+  "homepage": "https://github.com/crossroads-loyalty-solutions/react-use-browser",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/browser.esm.js",
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:flow": "cp build/flowstub.js dist/index.esm.js.flow && cp build/flowstub.js dist/index.js.flow && cp build/flowstub.js dist/browser.esm.js.flow",
+    "coverage": "nyc --reporter=html ava --verbose",
+    "clean": "rm -rf dist",
+    "distclean": "rm -rf package-lock.json node_modules dist",
+    "flow": "flow check",
+    "prepack": "npm run clean && npm run test && npm run build",
+    "test": "npm-run-all test:*",
+    "test:flow": "flow status",
+    "test:ava": "ava --verbose",
+    "test:xo": "xo",
+    "watch": "nodemon -w src -w test --exec \"npm run -q test || true\""
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.3",
+    "@babel/plugin-syntax-flow": "7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "7.6.3",
+    "@babel/preset-env": "7.6.3",
+    "@babel/register": "7.6.2",
+    "@crossroads-loyalty-solutions/eslint-config-xo": "0.2.8",
+    "ava": "2.4.0",
+    "cross-env": "6.0.3",
+    "flow-bin": "0.109.0",
+    "ninos": "3.0.0",
+    "nodemon": "1.19.3",
+    "npm-run-all": "4.1.5",
+    "nyc": "14.1.1",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "rollup": "1.23.1",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "xo": "0.25.3"
+  },
+  "peerDependency": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "ava": {
+    "babel": {
+      "testOptions": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "loose": true,
+              "shippedProposals": true,
+              "targets": {
+                "node": "current",
+                "firefox": "50",
+                "ie": "11"
+              },
+              "exclude": [
+                "transform-typeof-symbol"
+              ]
+            }
+          ]
+        ],
+        "plugins": [
+          [
+            "@babel/plugin-transform-flow-strip-types"
+          ]
+        ]
+      }
+    },
+    "files": [
+      "**/*.test.js"
+    ],
+    "sources": [
+      "src/**/*.js",
+      "**/src/**/*.js"
+    ],
+    "require": [
+      "./test/_register"
+    ],
+    "powerAssert": true
+  },
+  "xo": {
+    "extends": [
+      "@crossroads-loyalty-solutions/eslint-config-xo"
+    ],
+    "ignores": [
+      "rollup.config.js"
+    ],
+    "overrides": [
+      {
+        "files": "**/*.test.js",
+        "rules": {
+          "func-style": "off",
+          "ava/prefer-async-await": "off"
+        }
+      }
+    ],
+    "rules": {
+      "flowtype/require-parameter-type": "off",
+      "flowtype/require-return-type": "off",
+      "prefer-arrow/prefer-arrow-functions": "off",
+      "react/no-danger": "off"
+    }
+  }
+}
