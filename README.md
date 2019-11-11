@@ -6,6 +6,7 @@
 [![Codecov](https://img.shields.io/codecov/c/gh/crossroads-loyalty-solutions/react-use-browser)](https://codecov.io/gh/crossroads-loyalty-solutions/react-use-browser)
 ![License](https://img.shields.io/npm/l/@crossroads-loyalty-solutions/react-use-browser)
 [![npm](https://img.shields.io/npm/v/@crossroads-loyalty-solutions/react-use-browser)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
+[![Greenkeeper badge](https://badges.greenkeeper.io/crossroads-loyalty-solutions/react-use-browser.svg)](https://greenkeeper.io/)
 
 This hook enables client-side hydration of Server-Side-Rendered components
 where the final JS-enhanced DOM differs from the server-rendered markup.
