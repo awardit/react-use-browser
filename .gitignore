@@ -1,9 +1,11 @@
 *.code-workspace
 *.map
 .DS_Store
+.nyc_output
 .vscode
 /*.tgz
+coverage
 dist
-target
 node_modules
 package-lock.json
+target
