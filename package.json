@@ -34,10 +34,10 @@
     "watch": "nodemon -w src -w test --exec \"npm run -q test || true\""
   },
   "devDependencies": {
-    "@babel/core": "7.7.4",
+    "@babel/core": "7.7.5",
     "@babel/plugin-syntax-flow": "7.7.4",
     "@babel/plugin-transform-flow-strip-types": "7.7.4",
-    "@babel/preset-env": "7.7.4",
+    "@babel/preset-env": "7.7.5",
     "@babel/preset-react": "7.7.4",
     "@babel/register": "7.7.4",
     "@crossroads-loyalty-solutions/eslint-config-xo": "0.2.8",
