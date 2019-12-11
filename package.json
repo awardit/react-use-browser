@@ -41,7 +41,7 @@
     "@babel/preset-react": "7.7.4",
     "@babel/register": "7.7.4",
     "@crossroads-loyalty-solutions/eslint-config-xo": "0.2.8",
-    "@testing-library/react": "9.3.2",
+    "@testing-library/react": "9.3.3",
     "ava": "2.4.0",
     "cross-env": "6.0.3",
     "flow-bin": "0.113.0",
