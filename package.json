@@ -34,7 +34,7 @@
     "watch": "nodemon -w src -w test --exec \"npm run -q test || true\""
   },
   "devDependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.7.7",
     "@babel/plugin-syntax-flow": "7.7.4",
     "@babel/plugin-transform-flow-strip-types": "7.7.4",
     "@babel/preset-env": "7.7.6",
