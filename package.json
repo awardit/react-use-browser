@@ -1,5 +1,5 @@
 {
-  "name": "@crossroads-loyalty-solutions/react-use-browser",
+  "name": "@awardit/react-use-browser",
   "version": "1.0.0",
   "description": "A hook enabling client markup to differ from server markup when using Server-Side-Rendering",
   "author": "Martin Wernstål <m4rw3r@gmail.com>",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/crossroads-loyalty-solutions/react-use-browser.git"
+    "url": "https://github.com/awardit/react-use-browser.git"
   },
-  "bugs": "https://github.com/crossroads-loyalty-solutions/react-use-browser/issues",
-  "homepage": "https://github.com/crossroads-loyalty-solutions/react-use-browser",
+  "bugs": "https://github.com/awardit/react-use-browser/issues",
+  "homepage": "https://github.com/awardit/react-use-browser",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "browser": "dist/browser.esm.js",

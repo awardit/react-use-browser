@@ -1,12 +1,12 @@
 # use-browser
 
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@crossroads-loyalty-solutions/react-use-browser.svg)](https://bundlephobia.com/result?p=@crossroads-loyalty-solutions/react-use-browser)
-[![Dependencies](https://img.shields.io/david/crossroads-loyalty-solutions/react-use-browser.svg)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
-[![Build Status](https://travis-ci.org/crossroads-loyalty-solutions/react-use-browser.svg?branch=master)](https://travis-ci.org/crossroads-loyalty-solutions/react-use-browser)
-[![Codecov](https://img.shields.io/codecov/c/gh/crossroads-loyalty-solutions/react-use-browser)](https://codecov.io/gh/crossroads-loyalty-solutions/react-use-browser)
-![License](https://img.shields.io/npm/l/@crossroads-loyalty-solutions/react-use-browser)
-[![npm](https://img.shields.io/npm/v/@crossroads-loyalty-solutions/react-use-browser)](https://www.npmjs.com/package/@crossroads-loyalty-solutions/react-use-browser)
-[![Greenkeeper badge](https://badges.greenkeeper.io/crossroads-loyalty-solutions/react-use-browser.svg)](https://greenkeeper.io/)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@awardit/react-use-browser.svg)](https://bundlephobia.com/result?p=@awardit/react-use-browser)
+[![Dependencies](https://img.shields.io/david/awardit/react-use-browser.svg)](https://www.npmjs.com/package/@awardit/react-use-browser)
+[![Build Status](https://travis-ci.org/awardit/react-use-browser.svg?branch=master)](https://travis-ci.org/awardit/react-use-browser)
+[![Codecov](https://img.shields.io/codecov/c/gh/awardit/react-use-browser)](https://codecov.io/gh/awardit/react-use-browser)
+![License](https://img.shields.io/npm/l/@awardit/react-use-browser)
+[![npm](https://img.shields.io/npm/v/@awardit/react-use-browser)](https://www.npmjs.com/package/@awardit/react-use-browser)
+[![Greenkeeper badge](https://badges.greenkeeper.io/awardit/react-use-browser.svg)](https://greenkeeper.io/)
 
 This hook enables client-side hydration of Server-Side-Rendered components
 where the final JS-enhanced DOM differs from the server-rendered markup.
@@ -26,7 +26,7 @@ clients without JavaScript with an isomorphic application, such as:
 ## Installation
 
 ```bash
-npm i -E @crossroads-loyalty-solutions/react-use-browser
+npm i -E @awardit/react-use-browser
 ```
 
 If Webpack is used, ensure that the server- and client-bundles are built to
@@ -41,7 +41,7 @@ For Rollup `rollup-plugin-node-resolve` needs to be told to load the main-field
 ```javascript
 // app.js
 
-import { useBrowser } from "@crossroads-loyalty-solutions/react-use-browser";
+import { useBrowser } from "@awardit/react-use-browser";
 
 export const App = () => {
   const browser = useBrowser();
@@ -71,7 +71,7 @@ res.write(`</div>
 // client.js
 
 import { hydrate } from "react-dom";
-import { markHydrated } from "@crossroads-loyalty-solutions/react-use-browser";
+import { markHydrated } from "@awardit/react-use-browser";
 import { App } from "./app";
 
 const root = document.getElementById("app");
