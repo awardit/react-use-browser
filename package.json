@@ -34,7 +34,7 @@
     "watch": "nodemon -w src -w test --exec \"npm run -q test || true\""
   },
   "devDependencies": {
-    "@ava/babel": "1.0.0",
+    "@ava/babel": "1.0.1",
     "@awardit/eslint-config-xo": "0.3.0",
     "@babel/core": "7.8.4",
     "@babel/plugin-syntax-flow": "7.8.3",
