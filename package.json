@@ -57,7 +57,7 @@
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-node-resolve": "5.2.0",
-    "xo": "0.25.3"
+    "xo": "0.28.2"
   },
   "peerDependency": {
     "react": ">=16.8.0",
