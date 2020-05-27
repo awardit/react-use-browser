@@ -37,7 +37,7 @@
     "@ava/babel": "1.0.0",
     "@awardit/eslint-config-xo": "0.3.0",
     "@babel/core": "7.10.1",
-    "@babel/plugin-syntax-flow": "7.8.3",
+    "@babel/plugin-syntax-flow": "7.10.1",
     "@babel/plugin-transform-flow-strip-types": "7.8.3",
     "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
