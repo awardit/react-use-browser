@@ -1,6 +1,6 @@
-import babelPlugin from "rollup-plugin-babel";
-import nodeResolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
+import babelPlugin from "@rollup/plugin-babel";
+import nodeResolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 const babel = {
   ...require("./build/babel"),
@@ -28,7 +28,10 @@ export default [
     ],
     plugins: [
       nodeResolve({ preferBuiltins: true }),
-      babelPlugin(babel),
+      babelPlugin({
+        ...babel,
+        babelHelpers: "bundled",
+      }),
       commonjs(),
     ],
     external,
@@ -47,7 +50,10 @@ export default [
         preferBuiltins: false,
         mainFields: ["browser", "module", "main"],
       }),
-      babelPlugin(babel),
+      babelPlugin({
+        ...babel,
+        babelHelpers: "bundled",
+      }),
       commonjs(),
     ],
     external,
